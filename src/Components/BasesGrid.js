@@ -2,13 +2,13 @@ import React, {useState, useEffect} from 'react';
 
 const BasesGrid = props => {
   const [emptyBase] = useState(
-    <div>
-      <p style={{backgroundColor:'khaki',margin:'0', lineHeight:'40px', height:'40px', width:'40px', border:'1px solid red', textAlign:'center'}}>[---]</p>
+    <div style={{transform:'rotate(-45deg)', backgroundColor:'khaki',margin:'0 10px', lineHeight:'40px', height:'40px', width:'40px', border:'1px solid red', textAlign:'center'}} >
+      <p style={{background:'none', transform:'rotate(45deg)', margin:'0'}}>[---]</p>
     </div>
   );
   const [filledBase] = useState(
-    <div>
-      <p style={{backgroundColor:'yellow',margin:'0', lineHeight:'40px', height:'40px', width:'40px', border:'1px solid red', textAlign:'center'}}>[-X-]</p>
+    <div style={{transform:'rotate(-45deg)', backgroundColor:'yellow',margin:'0 10px', lineHeight:'40px', height:'40px', width:'40px', border:'1px solid red', textAlign:'center'}}>
+      <p style={{background:'none', transform:'rotate(45deg)', margin:'0'}}>[-X-]</p>
     </div>
   );
 
@@ -41,8 +41,8 @@ const BasesGrid = props => {
   return(
     <div>
       <h2>Field</h2>
-    <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', backgroundColor:'black', width:'100px', height:'100px', margin:'20px auto'}}>
-      <div style={{margin:'0'}}>
+    <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', backgroundColor:'black', width:'140px', height:'140px', margin:'20px auto'}}>
+      <div style={{margin:'-10px 0'}}>
         {secondBase}
       </div>
       <div style={{display:'flex',margin:'0'}}>
