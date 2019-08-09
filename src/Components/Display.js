@@ -311,7 +311,7 @@ const Display = props => {
     <div className='scoreboard'>
       <div className='score'>
         <div className='home scoreDisp'>
-          <h2>Home</h2>
+          {home}
           <p data-testid='runCountHome'>{runsHome}</p>
         </div>
         <div className='inning scoreDisp'>
@@ -322,7 +322,7 @@ const Display = props => {
           <h2>Inning</h2>
         </div>
         <div className='away  scoreDisp'>
-          <h2>Guest</h2>
+          {guest}
           <p data-testid='runCountAway'>{runsAway}</p>
         </div>
       </div>
